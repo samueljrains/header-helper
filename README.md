@@ -15,7 +15,7 @@ Assuming you want to add a state field on your input form and your field is call
 echo $this->Form->input('state', array('type'=>'select', 'options'=>$this->Header->getState()));
 
 Edit.ctp would contain:
-
+'''
 echo $this->Form->input('state', array('type'=>'select', 'options'=>$this->Header->getState($this->request->data['YourArray']['state'])));
-
+'''
 Where $this->request->data['YourArray']['state'] would be the correct name.
