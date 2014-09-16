@@ -12,10 +12,9 @@ Example
 
 Assuming you want to add a state field on your input form and your field is called 'state'.  The add.ctp line would contain:
 
-echo $this->Form->input('state', array('type'=>'select', 'options'=>$this->Header->getState()));
+`echo $this->Form->input('state', array('type'=>'select', 'options'=>$this->Header->getState()));`
 
 Edit.ctp would contain:
-```
-echo $this->Form->input('state', array('type'=>'select', 'options'=>$this->Header->getState($this->request->data['YourArray']['state'])));
-```
-Where $this->request->data['YourArray']['state'] would be the correct name.
+`echo $this->Form->input('state', array('type'=>'select', 'options'=>$this->Header->getState($this->request->data['YourArray']['state'])));`
+
+Where `$this->request->data['YourArray']['state'])));` would be the correct name of the model you are using.
