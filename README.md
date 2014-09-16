@@ -18,4 +18,4 @@ Edit.ctp would then contain:
 
 `echo $this->Form->input('state', array('type'=>'select', 'options'=>$this->Header->getState($this->request->data['YourArray']['state'])));`
 
-Where `$this->request->data['YourArray']['state'])));` would be the correct name of the model you are using.
+Where `$this->request->data['YourArray']['state'])));` would contain the correct name of the model you are using in place of 'YourArray'.
