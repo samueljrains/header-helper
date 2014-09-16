@@ -3,7 +3,7 @@
 /*
 Created:  2014
 Dscription:   Here is a helper file containing several handy funciton for data parsing, formating, and readable outputs.  It also contains simplified inputs for form values.
-Other:  This is a HeaderHelper.php file that is lcoated under the '/View/helper' directory under your main CakePHP directory (typically app).
+Other:  This is a HeaderHelper.php file that is located under the '/View/helper' directory under your main CakePHP directory (typically app).
 */
 
 App::uses('AppHelper', 'View/Helper');
