@@ -1,4 +1,6 @@
-header-helper
+HeaderHelper.php
 =============
 
 HeaderHelper.php file containing several easy-to-use functions to extend CakePHP functionality.
+
+In CakePHP, the file is loated under the '/View/helper/' directory under your main CakePHP directory (typically app).  Simply, find the function(s) you'd like to use and place it in your HeaderHelper.php file.
