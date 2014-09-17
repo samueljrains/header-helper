@@ -10,7 +10,7 @@ This file is mainly used for the formating of views to create a more pleasant ex
 Example
 =============
 
-Assuming you want to add a state field on your input form and your field is called 'state'.  The add.ctp line would contain:
+Assuming you want to add a U.S state or territory field on your input form and your field is called 'state'.  The add.ctp line would contain:
 
 `echo $this->Form->input('state', array('type'=>'select', 'options'=>$this->Header->getState()));`
 
