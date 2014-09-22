@@ -42,7 +42,7 @@ class HeaderHelper extends AppHelper {
       return "(" . substr($phone, 0, 3).") ".substr($phone, 3, 3)."-".substr($phone,6);
    }
 
-   //formats checkbox inputs values as boxes in views.
+   //formats checkbox inputs values as boxes in views.  Stylizes inline due to current MVC framwork applciation.  Change to fit your applciations style
    function ynClass($input) {
       $yn = ($input ? '&#10004' : '<span style="font-size: 16px;">&#9744;</span>');
       return $yn;
@@ -57,7 +57,7 @@ class HeaderHelper extends AppHelper {
       return $currency;
    }
 
-   //adds a stnadard funcationality naviagation menu to views.
+   //adds a standard naviagation menu to views.  Stylizes inline due to current MVC framwork applciation.  Change to fit your applciation's style.
    function standardMenu($current = null, $exclude = array()) {
       $menu = '';
       if(!in_array("Add", $exclude)) {
