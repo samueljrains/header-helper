@@ -10,7 +10,7 @@ This file is mainly used for the formating of views to create a more pleasant ex
 Example
 =============
 
-Assuming you want to add a U.S state or territory field on your input form and your field is called 'state'.  The add.ctp View would contain:
+Assuming you want to add a U.S state or territory field on your input form and your field is called 'state'.  The add.ctp and edit.ctp View would contain:
 
 ```
 <?php
@@ -19,7 +19,7 @@ Assuming you want to add a U.S state or territory field on your input form and y
 ?>
 ```
 
-Edit.ctp would then contain:
+Depeending on how your data is retrived (should not be necessary), Edit.ctp would need to contain:
 ```
 <?php
   echo $this->Form->input('state', array('type'=>'select', 'options'=>$this->Header->getState($this->request->data['YourArray']['state'])));
