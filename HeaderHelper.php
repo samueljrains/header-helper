@@ -41,12 +41,6 @@ class HeaderHelper extends AppHelper {
    function phoneFormat($phone) {
       return "(" . substr($phone, 0, 3).") ".substr($phone, 3, 3)."-".substr($phone,6);
    }
-
-   //formats checkbox inputs values as boxes in views.  Stylizes inline due to current MVC framwork applciation.  Change to fit your applciations style
-   function ynClass($input) {
-      $yn = ($input ? '&#10004' : '<span style="font-size: 16px;">&#9744;</span>');
-      return $yn;
-   }
    
    //formats numberical (decimals) values to currency (ex. $2.00).
    function currencyFormat($currency) {
