@@ -19,7 +19,7 @@ Assuming you want to add a U.S state or territory field on your input form and y
 ?>
 ```
 
-Depending on how your data is retrieved (should not be necessary), Edit.ctp would need to contain:
+Edit.ctp would contain:
 ```
 <?php
   echo $this->Form->input('state', array('type'=>'select', 'options'=>$this->Header->getState($this->request->data['YourArray']['state'])));
@@ -27,4 +27,4 @@ Depending on how your data is retrieved (should not be necessary), Edit.ctp woul
 ?>
 ```
 
-Where `$this->request->data['YourArray']['state'])));` would contain the correct name of the model you are using in place of 'YourArray'.  Passing the array value as an argument in the function is not necessary, but will display the value the use has selected.
+Where `$this->request->data['YourArray']['state'])));`  contians the correct data array value you are passing.  Optional call.
