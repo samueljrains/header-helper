@@ -27,4 +27,4 @@ Edit.ctp would contain:
 ?>
 ```
 
-Where `$this->request->data['YourArray']['state'])));`  contians the correct data array value you are passing.  Optional call.
+Where `$this->request->data['YourArray']['state'])));`  contians the correct data array value you are passing. Call is optional.
